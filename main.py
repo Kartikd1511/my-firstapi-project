@@ -92,7 +92,7 @@ async def scan_data(item: Item):
                     if merchandise_code in merchandise_codes:
                         poscode = item.get('POSCode', None)
                         description = item.get('Description', None)
-                        salesquantity = item.get('SalesQuantity', None)
+                        salesquantity = int(float(item.get('SalesQuantity', None)))
                         salesamount = "{:.2f}".format(float(item.get('SalesAmount', None)))
 
                         # Fetch the store document based on storeid
