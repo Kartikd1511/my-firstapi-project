@@ -5,7 +5,11 @@
       "use": "@vercel/python"
     }
   ],
-  "env": {
-    "PYTHON_VERSION": "3.12.3"
-  }
+  "routes": [
+    { "handle": "filesystem" },
+    {
+      "src": "/(.*)",
+      "dest": "/main.py"
+    }
+  ]
 }
