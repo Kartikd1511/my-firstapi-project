@@ -1,0 +1,10 @@
+fastapi
+pydantic
+pymongo
+bson
+numpy
+boto3
+pysftp
+csv
+uvicorn
+mangum
